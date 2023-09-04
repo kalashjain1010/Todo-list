@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBookOpen, FaBars, FaTimes } from 'react-icons/fa';
+import { FaList, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   let Links = [
@@ -12,11 +12,12 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
 
   return (
+    <>
     <div className='shadow-md w-full fixed top-0 left-0'>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
         {/* logo section */}
         <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-          <FaBookOpen className='w-7 h-7' />
+          <FaList className='w-7 h-7' />
           <span>Todo list </span>
         </div>
         {/* Menu icon */}
@@ -33,6 +34,7 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
+          </>
   );
 };
 
