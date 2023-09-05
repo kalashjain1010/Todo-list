@@ -34,7 +34,7 @@ const Todo = () => {
             Add Todo
           </button>
         </form>
-        <div className="todo-show-area" style={{ maxHeight: '400px', overflowY: 'auto' }}>
+        <div className="todo-show-area" style={{ maxHeight: '350px', overflowY: 'auto' }}>
           <ul>
             {todoList.map((singleTodo, index) => {
               return (
